@@ -1,0 +1,155 @@
+#root{
+ 
+  height: 100vh;
+  
+}
+
+.App{
+height: 100vh;
+display: flex;
+justify-content: center;
+
+}
+
+
+
+/* .soal {
+  width: 18rem;
+  height: 21rem;
+  overflow-y:scroll;
+  scroll-snap-align: center;
+  position: fixed;
+  background-color: white;
+  right: 6rem;
+  margin-right: 5rem;
+  
+} */
+
+.soal-wrap{
+ 
+ width: 42rem;
+  padding: 2rem;
+  height: 26rem;
+  
+ 
+}
+
+
+
+.home{
+  width: 1200px;
+}
+
+.hp{
+  position:absolute;
+  top:28px;
+  right:23rem;
+}
+
+.heroHome{
+height: 25rem;
+
+
+}
+
+@keyframes Nav {
+	0% {
+		
+		box-shadow: (0 25px 25px rgba(59 130 246 / 0.5));
+	}
+	
+	100% {
+		
+    box-shadow: (0 25px 25px rgb(255, 255, 255));;
+	}
+}
+@keyframes float {
+	0% {
+		
+		transform: translatey(0px);
+	}
+	50% {
+		
+		transform: translatey(-3px);
+	}
+	100% {
+		
+		transform: translatey(0px);
+	}
+}
+
+@keyframes float1 {
+	0% {
+		
+		transform: translatey(-3px);
+	}
+	50% {
+		
+		transform: translatey(0px);
+	}
+	100% {
+		
+		transform: translatey(-3px);
+	}
+}
+
+.kotak{
+  transform: translatey(0px);
+	animation: float 2s ease-in-out infinite;
+}
+.kotak1{
+  transform: translatey(-3px);
+	animation: float1 2s ease-in-out infinite;
+}
+.navbar{
+  animation: Nav 2s infinite;
+}
+@media screen and (max-width: 728px) {
+.soal-wrap{
+width:32rem;
+
+overflow-x: hidden;
+}
+
+.home{
+width: 33rem;
+margin-left: rem;
+}
+
+.hero{
+  margin-left: 10px;
+}
+
+.hp{
+  position:absolute;
+  top:25px;
+  right:1rem;
+}
+
+
+
+.soal{
+  width: 20rem;
+}
+
+/* #sidebar{
+  opacity: 1;
+  position: fixed;
+  bottom:6rem;
+  right: 1rem;
+} */
+
+.navbar{
+  margin-left: 1rem;
+  width: 30rem;
+}
+
+
+
+.footer{
+  display: none;
+}
+  
+ }
+
+
